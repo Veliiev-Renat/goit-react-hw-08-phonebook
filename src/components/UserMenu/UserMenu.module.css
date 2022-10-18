@@ -1,0 +1,14 @@
+.button{
+    width: 80px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    height:25px ;
+    margin-left: 20px;
+}
+
+.box{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
