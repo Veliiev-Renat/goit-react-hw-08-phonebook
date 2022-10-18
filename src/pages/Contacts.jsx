@@ -23,12 +23,17 @@ export default function Contacts() {
     }
      
     return (
-    <>
+    <div style={{
+    minHeight: 'calc(100vh - 50px)',
+    flexDirection:'column',
+    display:'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+    }}>
        <Form  />
       <Filter  />
       <Contact click={openModal}/>
       {open && <Modal  close={modalClose}  Click={backdropClick} id={id}/>}
-      </>
+      </div>
     );
   }
-  

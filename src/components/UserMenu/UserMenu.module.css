@@ -12,3 +12,7 @@
     align-items: center;
     justify-content: center;
 }
+.button:hover,
+.button:focus {
+  background-color: #cccccc;
+}

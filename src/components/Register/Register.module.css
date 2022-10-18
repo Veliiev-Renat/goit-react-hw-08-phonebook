@@ -17,9 +17,9 @@
     flex-direction: column;
     margin-bottom: 20px;
 }
-/* .input{
-
-} */
+.input{
+border-radius: 5px;
+}
 .box{
     min-height: calc(100vh - 50px);
     display:flex;
@@ -31,4 +31,8 @@
     font-size: x-large;
     text-align: center;
     
+}
+.button:hover,
+.button:focus {
+  background-color: #cccccc;
 }

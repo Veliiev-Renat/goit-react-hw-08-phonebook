@@ -1,6 +1,4 @@
 import { useDispatch } from 'react-redux';
-// import { logOut } from 'redux/auth/operations';
-// import { selectUser } from 'redux/auth/selectors';
 import { editContact } from 'redux/contacts/operations';
 import css from '../ModalUpdate/ModalUpdate.module.css'
 import { useEffect } from "react";
@@ -34,9 +32,16 @@ useEffect(()=>{
   return (
     <div onClick={Click} className={css.overlay}>
       <div  className={css.modal}>
-        <form onSubmit={edit}>
-            <input type="text" name='user'/>
-            <input type="text" name='number'/>
+        <form onSubmit={edit} className={css.form}>
+          <p className={css.text}>EDIT CONTACT</p>
+          <label className={css.label}>
+            Name
+            <input type="text" name='user' className={css.input}/>
+          </label>
+          <label className={css.label}>
+            Number
+            <input type="text" name='number'  className={css.input}/>
+          </label>
             <button className={css.button}>Update Contact</button>
         </form>
       </div>
