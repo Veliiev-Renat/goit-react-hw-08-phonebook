@@ -11,7 +11,7 @@ export default function Filter(){
 
         return(
         <form  className={style.form} onSubmit={(e)=>{e.preventDefault()}}>
-        <h2>Contacts</h2>
+        <p className={style.text}>Contacts</p>
         <label className={style.label}>
             Find contact by name
             <input type="text" onChange={handleChangeFilter} className={style.input} name="filter"/>

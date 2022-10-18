@@ -26,9 +26,11 @@ const filteredArray=filter?contacts.filter(contact=>contact.name.toLowerCase().i
         {filteredArray.map((contact)=>(
         <li key={contact.id} className={style.item}>
            <p className={style.text}>{contact.name} : {contact.number}</p> 
+           <div className={style.box}>
            <button type="button" onClick={()=>{dispatch(deleteContact(contact.id))}}  className={style.button}>delete </button>
            <button type="button" onClick={click}
              className={style.button} id={contact.id}>Up Date</button>
+             </div>
         </li>
         ))}    
     </ul>

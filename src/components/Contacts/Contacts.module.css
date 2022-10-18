@@ -8,11 +8,33 @@
     margin-left: 10px;
     border-radius: 4px;
     padding: 4px;
-}
-.button:hover,
-.button:focus{
-    background-color: rgb(29, 159, 229);
+    width: 70px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
 }
 .item{
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 355px;
+    background-color: rgb(98, 230, 98);
+    padding: 10px;
+    border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  background-color: #cccccc;
+}
+.box{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.list{
+    list-style-type: none;
+    padding-inline-start: 0;
 }

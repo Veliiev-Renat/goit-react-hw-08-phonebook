@@ -1,9 +1,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    border: 2px solid #000;
-    width: 30vw;
-    padding: 20px;
+    padding:10px 20px;
     border-radius: 5px;
 }
 .label{
@@ -14,6 +12,7 @@
 .input{
     margin-top: 10px;
     border-radius: 4px;
+    width: 270px;
 }
 .input:focus{
     border-color: rgb(29, 159, 229);
@@ -22,10 +21,23 @@
     box-shadow: 0 1px 5px rgb(41, 152, 212);
 }
 .button{
+display: flex;
+align-items: center;
+justify-content: center;
     cursor: pointer;
-    max-width: 140px;
+    width: 150px;
     border-radius: 5px;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(75, 175, 226);
+    background-color: aliceblue;
+}
+.text{
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+}
+.button:hover,
+.button:focus {
+  background-color: #cccccc;
 }

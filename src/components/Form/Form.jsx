@@ -24,8 +24,9 @@ dispatch(addContact({
 e.target.reset()
 }
 
-return(<><h2>Phonebook</h2>
+return(
 <form onSubmit={submitForm} className={style.form}>
+<p className={style.text}>Phonebook</p>
   <label className={style.label}>
     Name
   <input
@@ -50,5 +51,5 @@ return(<><h2>Phonebook</h2>
   </label>
   <button type='submit' className={style.button}>Add contact</button>
 </form>
-</> )
+ )
 }
