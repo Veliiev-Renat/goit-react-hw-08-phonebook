@@ -1,0 +1,10 @@
+.auth{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px
+}
+.link{
+    outline: none;
+    text-decoration: none;
+}

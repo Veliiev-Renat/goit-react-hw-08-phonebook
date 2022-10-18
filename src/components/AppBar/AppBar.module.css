@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 20px;
+    background-color: rgb(98, 230, 98);
+}
+.link{
+    outline: none;
+    text-decoration: none;
+}
