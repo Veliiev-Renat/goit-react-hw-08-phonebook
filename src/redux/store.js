@@ -1,4 +1,4 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit'
+import {  configureStore } from '@reduxjs/toolkit'
 import phoneBoockSlice  from './contacts/counterSlice'
 import { authReducer } from './auth/authSlise'
 import { 
@@ -15,17 +15,16 @@ import storage from 'redux-persist/lib/storage'
 const persistConfig = {
     key: 'root',
     storage,
-    blacklist:['filter']
+    whitelist:['token']
   }
-const rootReduser = combineReducers({
-  contact: phoneBoockSlice.reducer, 
-  auth:authReducer
-})
-  const persistedReducer = persistReducer(persistConfig, rootReduser)
+
+  const persistedReducer = persistReducer(persistConfig, authReducer)
 
 
 export const store = configureStore({
-    reducer:persistedReducer,
+    reducer:{
+      contact: phoneBoockSlice.reducer, 
+      auth:persistedReducer},
     middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

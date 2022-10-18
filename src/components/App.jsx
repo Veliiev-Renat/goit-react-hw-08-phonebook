@@ -1,4 +1,4 @@
-import { Routes , Route} from "react-router-dom";
+import { Routes , Route, Navigate} from "react-router-dom";
 import { Layout } from "./Layout/Layout";
 import { RestrictedRoute } from "./RestrictedRout";
 import { PrivateRoute } from "./PrivateRoute";
@@ -42,6 +42,7 @@ export function App(){
           }
         />
       </Route>
+      <Route path="*" element={<Navigate to='/' />} />
     </Routes>
       </> 
       )
